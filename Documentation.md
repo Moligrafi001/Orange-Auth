@@ -6,9 +6,9 @@ This is a public library that will help you to avoid skids and protect your scri
 ```lua
 local OrangeAuth = loadstring(game:HttpGet("https://raw.githubusercontent.com/Moligrafi001/Orange-Auth/refs/heads/main/Auth.lua", true))()
 ```
-> **Note:** Paste this in the top of your script.
-
-This will set up the library. Make sure you won't use the `local OrangeAuth`.
+Paste this in the top of your script. It works with any UI Library.
+> [!NOTE]
+> Make sure you won't use the `local OrangeAuth` again after you setting up this
 
 ### Settings
 ```lua
@@ -16,7 +16,7 @@ OrangeAuth.Initialize({
     Loadstring = true,
 })
 ```
-If you are using `loadstring` in ur script, set it true. It will protect any possible loadstring hook.
+If you are using `loadstring` in ur script, set it to true. It will protect any possible loadstring hook that may harm the your code safety.
 
 ### Example
 ```lua
