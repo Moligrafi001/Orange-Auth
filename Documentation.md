@@ -4,7 +4,16 @@ This is a public library that will help you to avoid skids and protect your scri
 ## Booting the library
 
 ```lua
-local Auth = loadstring(game:HttpGet("https://raw.githubusercontent.com/Moligrafi001/Hallow-Hub/main/extra/ChatSpy.lua", true))()
+local OrangeAuth = loadstring(game:HttpGet("https://raw.githubusercontent.com/Moligrafi001/Hallow-Hub/main/extra/Auth.lua", true))()
 ```
 > **Note:** Paste this in the top of your script.
 
+This will set up the library. Make sure you won't use the `local OrangeAuth`.
+
+### Settings
+```lua
+OrangeAuth.Initialize({
+    Loadstring = true,
+})
+```
+If you are using `loadstring` in ur script, set it true. It will protect any possible loadstring hook.
